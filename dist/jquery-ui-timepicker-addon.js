@@ -2,13 +2,14 @@
 * http://trentrichardson.com/examples/timepicker
 * Copyright (c) 2016 Trent Richardson; Licensed MIT */
 (function (factory) {
+    'use strict';
 	if (typeof define === 'function' && define.amd) {
-		define(['jquery', 'jquery-ui'], factory);
+		define(['jquery', 'jquery-ui/widget', 'jquery-ui/widgets/datepicker',  'jquery-ui/widgets/slider'], factory);
 	} else {
 		factory(jQuery);
 	}
 }(function ($) {
-
+    'use strict';
 	/*
 	* Lets not redefine timepicker, Prevent "Uncaught RangeError: Maximum call stack size exceeded"
 	*/
